@@ -1,0 +1,17 @@
+#colors {
+  height: 100px;
+  padding: 0px;
+  display: flex;
+  border: 1px solid black;
+}
+.colorBox {
+  height: inherit;
+  width: 40px;
+  cursor: pointer;
+}
+#currentColor {
+  height: inherit;
+  width: 40px;
+
+  border: 1px solid black;
+}
