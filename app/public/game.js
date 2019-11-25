@@ -15,7 +15,7 @@ const emitDraw = (x, y, px, py) => {
   buffer.push([brushColor, x, y, px, py]);
 };
 
-$("body").onmouseup = () => {
+$("body").onmouseup = $("body").touchEnded = () => {
   if (buffer.length) {
     socket.emit("out", buffer);
     buffer = [];
