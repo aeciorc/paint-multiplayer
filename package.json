@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "NODE_ENV=production nodemon app/server.js",
+    "start": "NODE_ENV=production node app/server.js",
     "dev": "NODE_ENV=development nodemon app/server.js"
   },
   "root": true,
