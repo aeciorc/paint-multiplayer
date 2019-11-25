@@ -2,7 +2,6 @@ const path = require("path");
 const express = require("express");
 const morgan = require("morgan");
 
-const errorHandler = require("./middleware/error");
 const indexRouter = require("./routes/index");
 
 const app = express();
@@ -19,7 +18,5 @@ if (process.env.NODE_ENV === "development") {
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/api", indexRouter);
-
-app.use(errorHandler);
 
 module.exports = app;
